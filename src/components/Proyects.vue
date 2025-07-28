@@ -71,7 +71,7 @@ export default {
                 {
                     imagen: '/Portfolio/img/logoNuda.jpg',
                     nombre: 'NUDA',
-                    descripcion: 'Proximamente...Tienda de ropa minimalista online, donde podrás encontrar un catalogo de prendas y gestionar su compra.',
+                    descripcion: 'En proceso...Tienda de ropa minimalista online, donde podrás encontrar un catalogo de prendas y gestionar su compra.',
                     tecnologias: '',
                     link: '',
                     style: {},

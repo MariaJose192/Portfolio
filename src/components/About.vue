@@ -27,7 +27,7 @@
             <li><strong>Bases de datos:</strong></li>
             <p>MySQL, MongoDB y PostgreSQL</p>
             <li><strong>Herramientas:</strong></li>
-            <p>Vite, Capacitor, Docker, Microsoft Office, Trello y AWS</p>
+            <p>Vite, Capacitor, Docker, Microsoft Office, Trello, Figma y AWS</p>
             <li><strong>Control de versiones:</strong></li>
             <p>Git, GitHub y GitLab</p>
             <li><strong>Entornos de desarrollo:</strong></li>

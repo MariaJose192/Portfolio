@@ -6,8 +6,8 @@
     <main>
       <About />
       <Education />
-      <Experience/>
-      <Proyects/>
+      <Experience />
+      <Proyects />
     </main>
     <Contact />
   </div>
