@@ -8,35 +8,78 @@
         </div>
         <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <p>
-            ¡Hola! Soy María José, una apasionada de la tecnología y recién graduada en Desarrollo de Aplicaciones
-          Multiplataforma.
+            ¡Hola! Soy María José,recién graduada en Desarrollo de Aplicaciones
+            Multiplataforma.
             <br><br>
-             Tras dedicar varios años al cuidado y bienestar animal, decidí dar un salto hacia un sector que me permite
-          unir creatividad, lógica y resolución de problemas: el desarrollo de software.
+            Tras dedicar varios años al cuidado y bienestar animal, decidí dar un salto hacia un sector que me permite
+            unir creatividad, lógica y resolución de problemas: el desarrollo de software.
             <br><br>
             Estoy buscando mi primera experiencia profesional en IT, donde pueda seguir creciendo, aportar valor con mis
-          conocimientos y aprender nuevas tecnologías.
+            conocimientos y aprender nuevas tecnologías.
           </p>
 
           <h3>Tecnologías utilizadas:</h3>
-          <ul>
-            <li><strong>Lenguajes de programación:</strong></li>
-            <p>Java, JavaScript, Kotlin y Python</p>
-            <li><strong>Frameworks y bibliotecas:</strong></li>
-            <p>Vue, React, Angular, Spring Boot, Hibernate, Bootstrap, HTML5 y CSS3</p>
-            <li><strong>Bases de datos:</strong></li>
-            <p>MySQL, MongoDB y PostgreSQL</p>
-            <li><strong>Herramientas:</strong></li>
-            <p>Vite, Capacitor, Docker, Microsoft Office, Trello, Figma y AWS</p>
-            <li><strong>Control de versiones:</strong></li>
-            <p>Git, GitHub y GitLab</p>
-            <li><strong>Entornos de desarrollo:</strong></li>
-            <p>Android Studio, Visual Studio Code, IntelliJ IDEA y Cursor</p>
-          </ul>
+          <section class="skills">
+            <details>
+              <summary><strong>Lenguajes de programación:</strong></summary>
+              <p>Java</p>
+              <p>JavaScript</p>
+              <p>Kotlin</p>
+              <p>Python</p>
+            </details>
+
+            <details>
+              <summary><strong>Frameworks y bibliotecas:</strong></summary>
+              <p>Vue</p>
+              <p>React</p>
+              <p>Angular</p>
+              <p>Spring Boot</p>
+              <p>Hibernate</p>
+              <p>Bootstrap</p>
+              <p>HTML5</p>
+              <p>CSS3</p>
+            </details>
+
+            <details>
+              <summary><strong>Bases de datos:</strong></summary>
+              <p>MySQL</p>
+              <p>MongoDB</p>
+              <p>PostgreSQL</p>
+            </details>
+
+            <details>
+              <summary><strong>Herramientas:</strong></summary>
+              <p>Vite</p>
+              <p>Capacitor</p>
+              <p>Docker</p>
+              <p>Microsoft Office</p>
+              <p>Trello</p>
+              <p>Figma</p>
+              <p>AWS</p>
+            </details>
+
+            <details>
+              <summary><strong>Control de versiones:</strong></summary>
+              <p>Git</p>
+              <p>GitHub</p>
+              <p>GitLab</p>
+            </details>
+
+            <details>
+              <summary><strong>Entornos de desarrollo:</strong></summary>
+              <p>Android Studio</p>
+              <p>Visual Studio Code</p>
+              <p>IntelliJ IDEA</p>
+              <p>Cursor</p>
+
+            </details>
+          </section>
+
 
           <div class="btn-group" data-aos="fade-up" data-aos-delay="400">
             <a class="btn" href="/Portfolio/CV-MariaJose.pdf" target="_blank">Descargar CV</a>
             <a class="btn" href="/Portfolio/Carta de Recomendación.pdf" target="_blank">Carta de Recomendación</a>
+            <a class="btn" href="#contact">Contactar</a>
           </div>
         </div>
       </div>
