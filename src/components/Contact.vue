@@ -2,7 +2,7 @@
   <section class="contact-section" id="contact">
     <h2>CONTACTO</h2>
     <p>Correo: <a href="mailto:marialcaraz.192@gmail.com">marialcaraz.192@gmail.com</a></p>
-    <p>Teléfono: <a href="tel:+34603521484">+34 603 52 14 84</a></p>
+    <p>Teléfono: <a href="tel:+34603521484">603 52 14 84</a></p>
   </section>
 
   <footer class="footer">

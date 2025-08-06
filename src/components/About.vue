@@ -77,10 +77,19 @@
 
 
           <div class="btn-group" data-aos="fade-up" data-aos-delay="400">
-            <a class="btn" href="/Portfolio/CV-MariaJose.pdf" target="_blank">Descargar CV</a>
+            <a class="btn" href="/Portfolio/CV-Maria Jose.pdf" target="_blank">Descargar CV</a>
             <a class="btn" href="/Portfolio/Carta de Recomendación.pdf" target="_blank">Carta de Recomendación</a>
-            <a class="btn" href="#contact">Contactar</a>
+            <a class="btn" @click="showModal = true">Contactar</a>
           </div>
+        </div>
+      </div>
+      
+      <div v-if="showModal" class="modal-overlay" @click.self="showModal = false">
+        <div class="modal">
+          <h2>❤️ Gracias por tu interés en ponerte en contacto conmigo ❤️</h2>
+          <p>Correo: <a href="mailto:marialcaraz.192@gmail.com">marialcaraz.192@gmail.com</a></p>
+          <p>Teléfono: <a href="tel:+34603521484">603 52 14 84</a></p>
+          <button class="btn" @click="showModal = false">Cerrar</button>
         </div>
       </div>
     </div>
@@ -91,6 +100,11 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  data() {
+    return {
+      showModal: false
+    };
+  }
 }
 </script>

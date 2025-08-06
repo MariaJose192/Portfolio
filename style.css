@@ -121,26 +121,6 @@ a:hover {
   cursor: pointer;
 }
 
-.anterior,
-.siguiente {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  background: none;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 0 15px;
-}
-
-.anterior {
-  left: -40px;
-}
-
-.siguiente {
-  right: -40px;
-}
 .educacion-container {
   display: flex;
   flex-direction: row;

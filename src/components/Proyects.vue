@@ -53,8 +53,6 @@ export default {
                     tecnologias: 'Java, Spring Boot, React, MySQL, Postman, Capacitor e Hibernate',
                     link: 'https://github.com/MariaJose192/CineVelvet',
                     style: {},
-                    imagenesExtras: [
-                    ]
                 },
                 {
 
@@ -65,8 +63,6 @@ export default {
                     tecnologias: 'Java, Spring Boot, Angular, MySQL, Postman, Bootstrap e Hibernate',
                     link: 'https://github.com/MariaJose192/ClientList',
                     style: {},
-                    imagenesExtras: [
-                    ]
                 },
                 {
                     imagen: '/Portfolio/img/logoNuda.jpg',
@@ -75,7 +71,6 @@ export default {
                     tecnologias: '',
                     link: '',
                     style: {},
-                    imagenesExtras: ['/Portfolio/img/logoNuda.jpg']
                 },
                 {
                     imagen: '/Portfolio/img/logoPawCare.png',
@@ -84,7 +79,6 @@ export default {
                     tecnologias: '',
                     link: '',
                     style: {},
-                    imagenesExtras: []
                 }
             ],
             visorAbierto: false,
