@@ -3,8 +3,7 @@
         <h1 class="about-title" data-aos="fade-right">PROYECTOS</h1>
         <div class="project app-container" v-for="(proyecto, index) in proyectos" :key="proyecto.nombre">
             <div class="image-container" @mousemove="handleMouseMove($event, index)" @mouseleave="resetImage(index)">
-                <img :src="proyecto.imagen" :alt="proyecto.nombre" class="project-image" :style="proyecto.style"
-                    @click="abrirVisor(proyecto.imagenesExtras, 0)" style="cursor: pointer" />
+                <img :src="proyecto.imagen" :alt="proyecto.nombre" class="project-image" :style="proyecto.style" />
             </div>
             <div class="body-container">
                 <h3>{{ proyecto.nombre }}</h3>
@@ -52,7 +51,7 @@ export default {
                         'Además, cuenta con un panel de administración para gestionar las películas, horarios y ventas.',
                     tecnologias: 'Java, Spring Boot, React, MySQL, Postman, Capacitor e Hibernate',
                     link: 'https://github.com/MariaJose192/CineVelvet',
-                    style: {},
+                    
                 },
                 {
 
@@ -62,7 +61,7 @@ export default {
                         'con funcionalidades de búsqueda, filtrado y edición de datos.',
                     tecnologias: 'Java, Spring Boot, Angular, MySQL, Postman, Bootstrap e Hibernate',
                     link: 'https://github.com/MariaJose192/ClientList',
-                    style: {},
+                   
                 },
                 {
                     imagen: '/Portfolio/img/logoNuda.jpg',
@@ -70,7 +69,7 @@ export default {
                     descripcion: 'En proceso...Tienda de ropa minimalista online, donde podrás encontrar un catalogo de prendas y gestionar su compra.',
                     tecnologias: '',
                     link: '',
-                    style: {},
+                    
                 },
                 {
                     imagen: '/Portfolio/img/logoPawCare.png',
@@ -78,7 +77,7 @@ export default {
                     descripcion: 'Proximamente...Control clínico de tu mascota',
                     tecnologias: '',
                     link: '',
-                    style: {},
+                    
                 }
             ],
             visorAbierto: false,

@@ -139,6 +139,31 @@ details {
   cursor: pointer;
 }
 
+
+details .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+details[open] .accordion-content {
+  max-height: 1000px; /* ajusta según tu contenido */
+}
+
+/* Párrafos en cascada */
+details p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+details[open] p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 summary {
   font-weight: bold;
   outline: none;
@@ -179,6 +204,21 @@ summary::-webkit-details-marker {
 .modal .btn {
   margin-top: 1rem;
 }
+.accordion-enter-active, .accordion-leave-active {
+  transition: all 0.3s ease;
+}
+.accordion-enter-from, .accordion-leave-to {
+  opacity: 0;
+  max-height: 0;
+  padding: 0 1rem;
+}
+.accordion-enter-to, .accordion-leave-from {
+  opacity: 1;
+  max-height: 1000px;
+  padding: 1rem;
+}
+
+
 
 @media (max-width: 768px) {
   .about-container {
