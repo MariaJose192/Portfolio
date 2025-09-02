@@ -10,25 +10,36 @@
                 <p>{{ proyecto.descripcion }}</p>
                 <p v-if="proyecto.tecnologias && proyecto.tecnologias.trim() !== ''"><strong>Tecnologías:</strong> {{
                     proyecto.tecnologias }}</p>
-                <div>
-                    <a v-if="proyecto.link && proyecto.link.trim() !== ''" class="btn" :href="proyecto.link"
-                        target="_blank">
-                        Ver proyecto
-                    </a>
+                <div class="btn-group__video">
+                    <div>
+                        <a v-if="proyecto.link && proyecto.link.trim() !== ''" class="btn" :href="proyecto.link"
+                            target="_blank">
+                            Ver proyecto
+                        </a>
+                    </div>
+
+                    <div v-if="proyecto.video && proyecto.video.trim() !== ''">
+                        <button class="btn" @click="abrirVideo(proyecto.video)">
+                            Ver video
+                        </button>
+                    </div>
                 </div>
+
+                <div v-if="videoAbierto" class="modal-overlay" @click.self="cerrarVideo">
+                    <div class="modal">
+                        <video controls autoplay class="project-video">
+                            <source :src="videoActual" type="video/mp4" />
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <button class="btn" @click="cerrarVideo">Cerrar</button>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
 
-        <div v-if="visorAbierto" class="overlay">
-            <div class="visor-contenido">
-                <span class="cerrar" @click="cerrarVisor">&times;</span>
-                <img :src="imagenesVisor[indiceVisor]" class="visor-imagen" />
-
-                <button class="anterior" @click="anteriorImagen" :disabled="indiceVisor === 0">‹</button>
-                <button class="siguiente" @click="siguienteImagen"
-                    :disabled="indiceVisor === imagenesVisor.length - 1">›</button>
-            </div>
-        </div>
 
     </section>
 </template>
@@ -37,6 +48,8 @@
 <style scoped src="/src/styles/About.css"></style>
 
 <script>
+import cartelera from '/videos/cartelera.mp4'
+
 export default {
     name: 'Proyects',
 
@@ -51,7 +64,10 @@ export default {
                         'Además, cuenta con un panel de administración para gestionar las películas, horarios y ventas.',
                     tecnologias: 'Java, Spring Boot, React, MySQL, Postman, Capacitor e Hibernate',
                     link: 'https://github.com/MariaJose192/CineVelvet',
-                    
+                    video: cartelera,
+                    mostrarVideo: false
+
+
                 },
                 {
 
@@ -61,15 +77,19 @@ export default {
                         'con funcionalidades de búsqueda, filtrado y edición de datos.',
                     tecnologias: 'Java, Spring Boot, Angular, MySQL, Postman, Bootstrap e Hibernate',
                     link: 'https://github.com/MariaJose192/ClientList',
-                   
+                    video: ''
+
+
                 },
                 {
                     imagen: '/Portfolio/img/logoNuda.jpg',
                     nombre: 'NUDA',
-                    descripcion: 'En proceso...Tienda de ropa minimalista online, donde podrás encontrar un catalogo de prendas y gestionar su compra.',
+                    descripcion: 'En proceso...Tienda de ropa minimalista online, donde podrás encontrar un catálogo de prendas y gestionar su compra.',
                     tecnologias: '',
                     link: '',
-                    
+                    video: ''
+
+
                 },
                 {
                     imagen: '/Portfolio/img/logoPawCare.png',
@@ -77,12 +97,13 @@ export default {
                     descripcion: 'Proximamente...Control clínico de tu mascota',
                     tecnologias: '',
                     link: '',
-                    
+                    video: ''
+
+
                 }
             ],
-            visorAbierto: false,
-            imagenesVisor: [],
-            indiceVisor: 0
+            videoAbierto: false,
+            videoActual: null
         }
     },
     methods: {
@@ -107,23 +128,13 @@ export default {
                 transition: 'transform 0.3s ease'
             }
         },
-        abrirVisor(imagenes, index) {
-            this.imagenesVisor = imagenes
-            this.indiceVisor = index
-            this.visorAbierto = true
+        abrirVideo(video) {
+            this.videoActual = video
+            this.videoAbierto = true
         },
-        cerrarVisor() {
-            this.visorAbierto = false
-        },
-        siguienteImagen() {
-            if (this.indiceVisor < this.imagenesVisor.length - 1) {
-                this.indiceVisor++
-            }
-        },
-        anteriorImagen() {
-            if (this.indiceVisor > 0) {
-                this.indiceVisor--
-            }
+        cerrarVideo() {
+            this.videoAbierto = false
+            this.videoActual = null
         }
     }
 }
