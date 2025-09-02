@@ -77,7 +77,19 @@ export default {
                         'con funcionalidades de búsqueda, filtrado y edición de datos.',
                     tecnologias: 'Java, Spring Boot, Angular, MySQL, Postman, Bootstrap e Hibernate',
                     link: 'https://github.com/MariaJose192/ClientList',
-                    video: ''
+                    video: '',
+                    mostrarVideo: false
+
+
+                },
+                {
+                    imagen: '/Portfolio/img/BodaRD.jpg',
+                    nombre: 'La boda de mi amiga',
+                    descripcion: 'Web personal para anunciar la boda de mi amiga, con información sobre el evento, ubicación, sugerencias y confirmación de asistencia.',
+                    tecnologias: 'Vue, JavaScript, CSS y Tailwind',
+                    link: 'https://github.com/MariaJose192/bodaRosaDavid',
+                    video: '',
+                    mostrarVideo: false
 
 
                 },
@@ -87,20 +99,23 @@ export default {
                     descripcion: 'En proceso...Tienda de ropa minimalista online, donde podrás encontrar un catálogo de prendas y gestionar su compra.',
                     tecnologias: '',
                     link: '',
-                    video: ''
+                    video: '',
+                    mostrarVideo: false
 
 
                 },
                 {
-                    imagen: '/Portfolio/img/logoPawCare.png',
-                    nombre: 'PawCare',
-                    descripcion: 'Proximamente...Control clínico de tu mascota',
+                    imagen: '/Portfolio/img/logoPaw.jpg',
+                    nombre: 'Paw Health',
+                    descripcion: 'En proceso...Aplicación en la que tendrás acceso a toda la información de tu mascota, recordatorios de vacunas y citas con el veterinario.',
                     tecnologias: '',
                     link: '',
-                    video: ''
+                    video: '',
+                    mostrarVideo: false
 
 
                 }
+                
             ],
             videoAbierto: false,
             videoActual: null
