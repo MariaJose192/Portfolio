@@ -66,6 +66,7 @@
   border-radius: 6px;
   transition: all 0.3s ease;
   font-weight: 600;
+  
 }
 
 .btn:hover {
@@ -195,6 +196,16 @@ summary::-webkit-details-marker {
   text-align: center;
 }
 
+.modal--video {
+  background-color: #c5c3c3;
+  border: 6px solid #8b5e3c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
 .modal h2 {
   margin-top: 0;
 }
@@ -237,7 +248,6 @@ summary::-webkit-details-marker {
 
 .project-video {
     width: 100%;
-    max-height: 400px;
     border-radius: 8px;
     margin-top: 10px;
 }
