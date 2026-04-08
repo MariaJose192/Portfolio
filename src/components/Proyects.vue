@@ -26,12 +26,12 @@
                 </div>
 
                 <div v-if="videoAbierto" class="modal-overlay" @click.self="cerrarVideo">
-                    <div class="modal">
+                    <div class="modal--video">
                         <video controls autoplay class="project-video">
                             <source :src="videoActual" type="video/mp4" />
                             Tu navegador no soporta videos HTML5.
                         </video>
-                        <button class="btn" @click="cerrarVideo">Cerrar</button>
+                        <button class="btn" @click="cerrarVideo">Cerrar presentación</button>
                     </div>
                 </div>
 
